@@ -33,10 +33,20 @@
 }
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-
   padding: 20px;
   font-size: 30px;
   text-align: center;
+}
+.grid-item:hover{
+  gap: 5px;
+  background-color: #1B1C34;
+  border-radius: 15px;
+  box-shadow: #404040;
+}
+.grid-item p:hover{
+  color:whitesmoke;
+  
+  
 }
 .grid-item p{
 display: flex;
@@ -69,7 +79,10 @@ body {
   font-size: var(--normal-font-size);
   color: var(--second-color);
  /* background-image: url(/Portfolio/assets/img/79ab04ae66154a34c2518a69bf6c6a23.jpg); */
+ 
 }
+
+
 
 h1, h2, p {
   margin: 0;
@@ -134,6 +147,7 @@ img {
   z-index: var(--z-fixed);
   background: linear-gradient(to right,  #043764,#7be9ee,);
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  
 }
 
 /*===== NAV =====*/
@@ -376,19 +390,27 @@ work__container bd-grid{
   background-color: yellow;
 }
 }
-/*
+
 .top-part{
     backface-visibility: visible;
     transition-property: all;
     box-decoration-break: slice;
 }
-*/
+
 
 .work__img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: .5rem;
   overflow: hidden;
 }
+.Work_content{
+  color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 10px;
+      background-color: darkgray;
+    }
 
 .work__img img {
   transition: 1s;
