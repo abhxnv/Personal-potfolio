@@ -27,8 +27,7 @@
 }
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
- 
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 10px;
 }
 .grid-item {
@@ -46,8 +45,10 @@
 }
 .grid-item p:hover{
   color:whitesmoke;
-  
-  
+
+}
+.card:hover{
+  color: #D12322;
 }
 
 .grid-item p{
@@ -337,7 +338,7 @@ img {
   margin-bottom: var(--mb-4);
   border-radius: .5rem;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-  background: #fff;
+  background: #c4c4c4;
 }
 
 .skills__icon {
@@ -388,10 +389,17 @@ img {
 .work__container {
   row-gap: 2rem;
 }
-work__container bd-grid{
+.work__container bd-grid{
     hover {
   background-color: yellow;
+  
 }
+}
+.card:hover{
+  background-color:lightslategray;
+  box-shadow: 10px 10px #1B1C34;
+
+
 }
 
 .top-part{
@@ -504,7 +512,7 @@ work__container bd-grid{
     bottom: 25%;
   }
   .about__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1.7fr);
     align-items: center;
     text-align: initial;
   }
